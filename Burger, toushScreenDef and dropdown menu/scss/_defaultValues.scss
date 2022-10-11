@@ -1,0 +1,49 @@
+// Настройки текста----------------------------------------------------------------------------
+$textColor: black;
+$fontSize: 14px;
+$fontFamily: "Times New Roman";
+// Размеры полотна------------------------------------------------------------------------------
+$maxWidth: 1920;
+$minWidth: 320;
+// Брэйкпоинты макета---------------------------------------------------------------------------
+$maxWidthContainer: 1024;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+// Основной контейнер---------------------------------------------------------------------------
+$bp1: $md1 + px;
+$bp2: $md2 + px;
+$bpMobile: $md3 + px;
+$bp4: $md4 + px;
+.container{
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    @media (max-width: $bp1) {
+        max-width: 970px;
+    }
+    @media (max-width: $bp2) {
+        max-width: 750px;
+    }
+    @media (max-width: $bpMobile) {
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+// ---------------------------------------------------------------------------------------------
+
+body{
+    font-size: $fontSize;
+    color: $textColor;
+}
+
+// Прижатие футера к низу 
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1 1 auto;
+}
