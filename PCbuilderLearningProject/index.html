@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>PCbuilder | О нас</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="styleAnim.css">
+		<link rel="icon" href="favicon.png">
+</head>
+<body>
+  <input id="TopButton" value="Вверх" type="button">
+		<div class="content">
+				<input class="registButt buttonST anim_item stShow" type="button" value="Регистрация">
+				<div id="UserData">
+				  <p id="UserName"></p>
+				  <p id="UserEmail"></p>
+				</div>
+				<div class="textTitle">
+						<div class="title anim_item stShow"><span class="PC">PC</span>builder</div>
+						<p class="TitleDescr anim_item stShow delay">Сеть интренет-магазинов</p>
+				</div>
+		</div>
+		<div class="content">
+				<div class="flexBox">
+				<div class="block1 anim_item">
+						<h1 class="artcTitle stShow">О нас</h1>
+						<p class="stShow">Одна из лучих сетей магазинов-сервисных центров по сборке пк, их ремонту и продаже комплектующих, переферий и аксесуаров!</p>
+				</div>
+				<div class="block2"></div>
+				<div class="block3 anim_item">
+						<p class="text stShow">            Наша компания занимаеться сборкой компьютеров любых видов, начиная от офисных дешовых системников для работы в программах Microsoft Offic и т.д., заканчивая игровыми монстрами, с которыми будет комфортно не только играть, а также работать с графикой. Так же есть возможность заказать свой вариант дизайна корпуса и не только.  Помимо сборки  под заказ есть готовые варианты компьютеров которе вы можете приобрести. Ещё у нас есть сервисные центры в которых мы готовы провести бесплатную диагностику. Присутствует широкий выбор переферий, акссесуаров и прочего. И бла бла бла... </p>
+				</div>
+				<div class="block4"></div>
+				<div class="comentsBlock">
+						<h2 class="anim_item stShow animNOhide">Ваш коментарий</h2>
+						<form name="coments">
+								<textarea name="comentsArea" class="comentsArea"></textarea><br>
+								<input name="sendComent" class="buttonST" type="button" value="Отправить">
+								<a id="comentEror" class="erorMassege"></a>
+						</form>
+						<div class="areaComents">
+								<h3 class="comentsBlockTitle">Коментарии</h3>
+								<div class="comentBox">
+										<p class="userName">Albert</p>
+										<p class="commentText">Пацаны ваще ребята</p>
+								</div>
+						</div>
+				</div>
+				</div>
+		</div>
+		<div class="content">
+				<div class="footer">
+						<p>Контакты</p>
+						<p>Адресс: Ул. Пушкина, дом Калатушкина</p>
+						<p>Номер телефона: 8 800 555 3535 900</p>
+						<p>Эл. почта: CoolNameEmail@pochta.com</p>
+				</div>
+		</div>
+		
+		<!-- Окно регистраций -->
+		<div class="content">
+     <div class="registWindow remove">
+     		<h2 class="registTitle">Регистрация</h2>
+     		<input type="button" class="X" value="X">
+   		<form name="Registration">
+   				<div class="flexBox">
+   						<div class="nameBox box">
+   								<p class="registText">Имя</p>
+   								<input name="name" type="text"><br>
+   								<a id="ErorName" class="erorMassege"></a>
+   						</div>
+   						<div class="secondNameBox box">
+   								<p class="registText">Фамилия</p>
+   								<input name="secondName" type="text"><br>
+   								<a id="ErorSecondName" class="erorMassege"></a>
+   						</div>
+   						<div class="userSex box">
+   								<p>Пол</p>
+   								<input type="radio" name="pol" value="Мужчина" checked>
+   								<a class="registText">Мужчина</a><br>
+   								<input type="radio" name="pol" value="Женщина">
+   								<a class="registText">Женщина</a>
+   						</div>
+   						<div class="UserEmail box">
+   								<p class="registText">Ваша электронная почта</p>
+   								<input name="email" type="text"><br>
+   								<a id="ErorEmail" class="erorMassege"></a>
+   						</div>
+   						<div class="sendBlock box">
+   								<input name="sandButt" class="buttonST" type="button" value="Зарегистрироваться">
+   								<p id="eror"></p>
+   						</div>
+   				</div>
+   		</form>
+     </div>
+   </div>
+   <script src="animText.js"></script>
+   <script src="forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@keyframes gradient{
+		0%{
+				background-position: 0% 50%;
+		}
+		100%{
+			 background-position: 130% 50%;
+		}
+}
+
+.stShow{
+		transform: translate(0px, 100px);
+		transition: all 0.8s ease 0.4s;
+		opacity: 0;
+}
+.stShow.active,
+.active .stShow{
+		transform: translate(0px, 0px);
+		opacity: 1;
+}
+.delay{
+		transition: all 0.8s ease 1s;
+		transform: translate(-100px, 0px);
+}
+.remove{
+		transform: translate(0px, -120%);
+		opacity: 0;
+}
